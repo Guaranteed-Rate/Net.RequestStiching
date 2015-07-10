@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0B3DA9D6-1DA4-4A6D-8E8C-264872B3D7A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{B0C23B1D-9581-4350-9C7E-252A59B7A2ED}"
+	ProjectSection(SolutionItems) = preProject
+		MessageHandlers\MessageHandlers.nuspec = MessageHandlers\MessageHandlers.nuspec
+		MessageHandlers\MessageHandlersPublish.bat = MessageHandlers\MessageHandlersPublish.bat
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageHandlers", "MessageHandlers\MessageHandlers.csproj", "{D0C5F231-877B-44A6-A05E-9B76B10AB582}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0C5F231-877B-44A6-A05E-9B76B10AB582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C5F231-877B-44A6-A05E-9B76B10AB582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C5F231-877B-44A6-A05E-9B76B10AB582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C5F231-877B-44A6-A05E-9B76B10AB582}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0C5F231-877B-44A6-A05E-9B76B10AB582} = {0B3DA9D6-1DA4-4A6D-8E8C-264872B3D7A3}
+	EndGlobalSection
+EndGlobal

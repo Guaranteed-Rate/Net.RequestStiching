@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/Guaranteed-Rate/RequestStichingMessageHandler</projectUrl>
+    <iconUrl>https://www.guaranteedrate.com/images/images/gr-logo-arrow.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release. Enjoy!</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Request Stitching Message Handler</tags>
+  </metadata>
+</package>
