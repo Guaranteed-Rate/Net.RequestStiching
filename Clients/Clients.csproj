@@ -7,8 +7,8 @@
     <ProjectGuid>{7B9EE3DB-AF02-4932-ABC2-A22833999FD1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Clients</RootNamespace>
-    <AssemblyName>Clients</AssemblyName>
+    <RootNamespace>GuaranteedRate.Net.RequestStitching.Clients</RootNamespace>
+    <AssemblyName>GuaranteedRate.Net.RequestStitching.Clients</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

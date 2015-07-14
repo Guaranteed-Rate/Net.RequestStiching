@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Clients")]
+[assembly: AssemblyTitle("Request stitching HTTP client")]
 [assembly: AssemblyDescription("Simple HTTP client that stitches together requests by adding X-Request-Id and X-Session-Id into the header of requests")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Guaranteed Rate")]

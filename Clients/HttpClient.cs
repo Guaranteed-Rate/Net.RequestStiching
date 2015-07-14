@@ -1,9 +1,9 @@
-﻿namespace Clients
+﻿namespace GuaranteedRate.Net.RequestStitching.Clients
 {
     using System.Collections.Specialized;
-    using GuaranteedRate.Net.RequestStitching.MessageHandlers;
+    using MessageHandlers;
 
-    public class HttpClient : GuaranteedRate.Net.Http.HttpService.HttpClient
+    public class HttpClient : Http.HttpService.HttpClient
     {
         public HttpClient(string baseUrl, NameValueCollection defaultRequestHeaders = null)
             : base(baseUrl, defaultRequestHeaders)
