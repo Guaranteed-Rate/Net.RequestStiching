@@ -1,4 +1,4 @@
-﻿namespace RequestStitching.MessageHandlers
+﻿namespace GuaranteedRate.Net.RequestStitching.MessageHandlers
 {
     using System;
     using System.Collections.Generic;
@@ -48,7 +48,7 @@
         private string StitchRequestHeader(HttpRequestMessage request, RequestHeader requestHeader)
         {
             string value = null;
-            var name = RequestStitchingContext.RequestHeaders[requestHeader];
+            var name = RequestContext.RequestHeaders[requestHeader];
 
             if (request.Headers.Contains(name))
                 value = request.Headers.GetValues(name).First();
@@ -57,14 +57,14 @@
             else
                 _errors.Add(string.Format("{0} is missing from the request", name));
 
-            RequestStitchingContext.Set(requestHeader, value);
+            RequestContext.Set(requestHeader, value);
 
             return value;
         }
 
         private void SetResponseHeader(HttpResponseMessage response, RequestHeader requestHeader, string value)
         {
-            var name = RequestStitchingContext.RequestHeaders[requestHeader];
+            var name = RequestContext.RequestHeaders[requestHeader];
             response.Headers.TryAddWithoutValidation(name, value);
         }
     }

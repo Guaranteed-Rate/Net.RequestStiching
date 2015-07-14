@@ -1,9 +1,9 @@
-namespace RequestStitching.MessageHandlers
+namespace GuaranteedRate.Net.RequestStitching.MessageHandlers
 {
     using System.Collections.Generic;
     using System.Web;
 
-    public static class RequestStitchingContext
+    public static class RequestContext
     {
         private static string Get(RequestHeader requestHeader)
         {
