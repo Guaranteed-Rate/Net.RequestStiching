@@ -8,8 +8,10 @@ namespace GuaranteedRate.Net.RequestStitching.MessageHandlers
         private static string Get(RequestHeader requestHeader)
         {
             var name = RequestHeaders[requestHeader];
-            var value = HttpContext.Current.Items[name];
-            return value != null ? value.ToString() : null;
+            if (HttpContext.Current == null || !HttpContext.Current.Items.Contains(name))
+                return null;
+            var value =  HttpContext.Current.Items[name];
+            return value == null ? null : value.ToString();
         }
 
         public static string RequestId

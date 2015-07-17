@@ -30,11 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GuaranteedRate.Net.Http.HttpService">
-      <HintPath>..\packages\GuaranteedRate.Net.Http.HttpService.1.0.1.0\lib\net45\GuaranteedRate.Net.Http.HttpService.dll</HintPath>
+    <Reference Include="GuaranteedRate.Net.Http.HttpService, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GuaranteedRate.Net.Http.HttpService.1.0.2.0\lib\net45\GuaranteedRate.Net.Http.HttpService.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="GuaranteedRate.Net.RequestStitching.MessageHandlers">
-      <HintPath>..\packages\GuaranteedRate.Net.RequestStitching.MessageHandlers.1.0.1.0\lib\net45\GuaranteedRate.Net.RequestStitching.MessageHandlers.dll</HintPath>
+    <Reference Include="GuaranteedRate.Net.RequestStitching.MessageHandlers, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GuaranteedRate.Net.RequestStitching.MessageHandlers.1.0.3.0\lib\net45\GuaranteedRate.Net.RequestStitching.MessageHandlers.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
