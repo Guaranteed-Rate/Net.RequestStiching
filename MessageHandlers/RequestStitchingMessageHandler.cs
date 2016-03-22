@@ -15,7 +15,7 @@
         /// Extracts X-Session-Id and X-Request-Id from request header and stores them in the current HTTP context. 
         /// Adds X-Session-Id and X-Request-Id to the response header.
         /// </summary>
-        /// <remarks>Use RequestStitchingContext.SessionId and RequestStitchingContext.SessionId to retrieve the values.</remarks>
+        /// <remarks>Use RequestContext.RequestId and RequestContext.SessionId to retrieve the values.</remarks>
         /// <param name="generateIfMissing">Sends a Bad Request response if X-Request-Id and X-Session-Id are not include in the request header</param>
         public RequestStitchingMessageHandler(bool generateIfMissing)
         {
