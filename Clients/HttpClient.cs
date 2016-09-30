@@ -1,13 +1,14 @@
 ﻿namespace GuaranteedRate.Net.RequestStitching.Clients
 {
     using System.Collections.Specialized;
+    using System.Net.Http.Formatting;
 
     using MessageHandlers;
 
     public class HttpClient : Http.HttpService.HttpClient
     {
-        public HttpClient(string baseUrl = null, NameValueCollection defaultRequestHeaders = null)
-            : base(baseUrl, defaultRequestHeaders)
+        public HttpClient(string baseUrl = null, NameValueCollection defaultRequestHeaders = null, JsonMediaTypeFormatter jsonMediaTypeFormatter = null)
+            : base(baseUrl, defaultRequestHeaders, jsonMediaTypeFormatter)
         {
             var sessionId = RequestContext.SessionId;
             var requestId = RequestContext.RequestId;
